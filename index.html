@@ -4,14 +4,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-.mySlides {display:none;}
-</style>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-  p.solid {border-style: solid;}
+  * {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 </style>
 </head>
 <body>
@@ -42,25 +54,20 @@
 </div>
 </div>
 <!-- Page content -->
-  <!-- Automatic Slideshow -->
+  <!-- Images Side by Side -->
 <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
-  
-  <script>
-var myIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
+  <div class="row">
+    <div class="column">
+      <img src="https://github.com/Christopher-B-D/portfolio/blob/master/Smartcontact-logo.png?raw=true" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://github.com/Christopher-B-D/portfolio/blob/master/Smartcontact-logo.png?raw=true" alt="Sma" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://github.com/Christopher-B-D/portfolio/blob/master/Smartcontact-logo.png?raw=true" alt="Mountains" style="width:100%">
+    </div>
+  </div>
 
 <!-- cab4kidz -->
 <center>
@@ -87,7 +94,7 @@ Demo
  <a href="https://christopher-b-d.github.io/portfolio/home.html">
 <img border="0" alt="W3Schools" src="https://github.com/Christopher-B-D/portfolio/blob/master/Smartcontact-logo.png?raw=true">
 </a>
-  
+
 
 </center>
 
